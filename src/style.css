@@ -43,16 +43,19 @@ h1 {
   box-shadow: 2px 2px 5px rgba(65, 50, 100, 0.08);
   margin-bottom: 40px;
 }
-
+.hidden {
+  display: none;
+}
 form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 20px;
   display: flex;
+}
+.form-container {
   box-shadow: 2px 2px 5px rgba(65, 50, 100, 0.08);
   margin-bottom: 40px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
 }
-
 .form-input-box {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -67,7 +70,27 @@ footer {
   font-size: 13px;
   margin-top: 80px;
 }
-
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 .poem strong {
   color: rgb(212, 177, 134);
+}
+.generating {
+  animation: blink-animation 0.8s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
