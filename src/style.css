@@ -67,3 +67,7 @@ footer {
   font-size: 13px;
   margin-top: 80px;
 }
+
+.poem strong {
+  color: rgb(212, 177, 134);
+}
