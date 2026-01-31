@@ -7,6 +7,7 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
+    <div class = "container">
     <header>
       <h1>AI Poem Generator</h1>
     </header>
@@ -15,18 +16,20 @@
       <form>
         <input
           type="text"
-          placeholder="Enter the topic of the poem"
+          placeholder="Enter a topic"
           autofocus
           required
           autocomplete="off"
+          class = "form-input-box"
         />
-        <input type="submit" />
-        <div id="poem">
+        <button type="submit" class = "submit-button"> Generate! </button>
+       </form>
+       
+       <div class="poem">
           The Poem will go here
           <br />
           The Poem will go here
         </div>
-      </form>
     </main>
 
     <script src="src/script.js"></script>
@@ -34,10 +37,10 @@
 
   <footer>
     This AI project was coded by
-    <a href="https://github.com/jmcain" target="_blank"> Jessie Cain</a> and
-    <a href="https://github.com/jmcain/poem-generator" target="_blank">
+    <a href="https://github.com/jmcain" target="_blank" class = "link"> Jessie Cain</a> and
+    <a href="https://github.com/jmcain/poem-generator" target="_blank" class= "link">
       is open sourced on Github</a
     >
-    and is hosted on Netlify.
-  </footer>
+    and is hosted on <a href ="https://app.netlify.com/projects/ai-poemgenerator-jessie/overview" class = "link">  Netlify. </a> </footer>
+  </div>
 </html>
